@@ -6,7 +6,7 @@ const RESOURCES = {
 "/": "456d1ce7168dc54331e9a1a56f8b9c81",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "manifest.json": "82febe992bcd1934898d1506251f5b31",
-"main.dart.js": "9ae22661671a6b09913fb6bcf8654413",
+"main.dart.js": "c7054a8a91e8769a1a3ddff889510c6a",
 "assets/LICENSE": "056d84d11c4e0cc6df8f86ada302b420",
 "assets/AssetManifest.json": "1c0ee925a5fd722fbed06f56d6d41289",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "5a37ae808cf9f652198acde612b5328d",

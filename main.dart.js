@@ -41570,7 +41570,7 @@ $0:function(){var t,s=this.a
 K.fD(s).cL()
 t=window.location
 s.Y(u.r).toString
-t.assign("https://immadisairaj.wordpress.com/")},
+t.assign("/blog")},
 $S:0}
 R.Sv.prototype={
 $0:function(){this.a.mV()},
@@ -41644,7 +41644,7 @@ $S:0}
 O.TM.prototype={
 $0:function(){var t=window.location
 this.a.Y(u.r).toString
-t.assign("https://immadisairaj.wordpress.com/")},
+t.assign("/blog")},
 $S:0}
 O.TI.prototype={
 $0:function(){K.fD(this.a).iI("/",u.K)},

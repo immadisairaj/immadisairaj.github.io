@@ -5,36 +5,312 @@
     <description>Open-Source Enthusiast | Musician</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 09 Jun 2020 20:53:14 +0530</pubDate>
-    <lastBuildDate>Tue, 09 Jun 2020 20:53:14 +0530</lastBuildDate>
+    <pubDate>Tue, 09 Jun 2020 22:48:24 +0530</pubDate>
+    <lastBuildDate>Tue, 09 Jun 2020 22:48:24 +0530</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Git with Open-Source</title>
+        <description>&lt;p&gt;Here in this blog, I will be giving an overview of using the &lt;strong&gt;git version control system&lt;/strong&gt; while contributing to &lt;em&gt;open-source projects&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h3 id=&quot;forking-and-cloning-a-repo-into-your-local-system&quot;&gt;Forking and Cloning a repo into your local system&lt;/h3&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Initially, choose an open-source project on the domain of your interest for which you would like to contribute. Let the project repository be “&lt;em&gt;project-repo&lt;/em&gt;“.&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Go to the project-repo site in GitHub. Click the &lt;ins&gt;&lt;strong&gt;Fork&lt;/strong&gt;&lt;/ins&gt; button which is located in the top right corner. This action forks the project to your GitHub account. Let’s call it the “&lt;em&gt;account-repo&lt;/em&gt;“.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now direct to a folder in your machine where you want to clone the repo. Open the terminal in that folder. Now before going to next step make sure there is git installed in your machine. If not you can download it from &lt;a href=&quot;https://git-scm.com/downloads&quot;&gt;this&lt;/a&gt; link.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git clone https://github.com/&amp;lt;username&amp;gt;/&amp;lt;project-name&amp;gt;.git&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Use this command to clone the project in your local machine. Here &lt;em&gt;username&lt;/em&gt; is your GitHub handle and project-name is the project you are going to contribute.&lt;/p&gt;
+
+&lt;p&gt;Let this repo be “&lt;em&gt;local-repo&lt;/em&gt;“.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ cd &amp;lt;project-name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you have a link between &lt;em&gt;local-repo&lt;/em&gt; and &lt;em&gt;account-repo&lt;/em&gt; as “&lt;strong&gt;origin&lt;/strong&gt;“. You also need to add the &lt;em&gt;project-repo&lt;/em&gt;. You can do by the following command.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git remote add upstream https://github.com/&amp;lt;company-name&amp;gt;/&amp;lt;project-name&amp;gt;.git&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here &lt;em&gt;company-name&lt;/em&gt; is the handle of the &lt;em&gt;project-repo&lt;/em&gt; and &lt;em&gt;project-name&lt;/em&gt; is the name of the project.&lt;/p&gt;
+
+&lt;p&gt;This you have a link between local-repo and project-repo as “&lt;ins&gt;upstream&lt;/ins&gt;“.&lt;/p&gt;
+
+&lt;p&gt;You can check the remote repo’s of your &lt;em&gt;local-repo&lt;/em&gt; by&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git remote -v&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you can pull the updated project of the &lt;em&gt;project-repo&lt;/em&gt; into your &lt;em&gt;local-repo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git pull upstream &amp;lt;branch&amp;gt; --rebase&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here &lt;em&gt;branch&lt;/em&gt; is the branch name you want to pull. It will be “development” for most of the Open-Source projects. And now you can push the changes from local-repo to account-repo.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git push origin &amp;lt;branch&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This can be done every time you start working for the day. And make sure you are in the proper branch while you do this. You can check your branch by&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git branch&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you have all set for working on the project without any issues.&lt;/p&gt;
+
+&lt;h3 id=&quot;working-on-the-project&quot;&gt;Working on the project&lt;/h3&gt;
+
+&lt;p&gt;You find some issue and want to work on it. So, the first thing you do is create a new branch for working on the issue. You can create a new branch by&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git branch &amp;lt;new-branch-name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here &lt;em&gt;new-branch-name&lt;/em&gt; can be anything you give name related to the issue.&lt;/p&gt;
+
+&lt;p&gt;After creating a new branch you should check out to that branch to work on the issue. It can be done by&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git checkout &amp;lt;branch-name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here &lt;em&gt;branch-name&lt;/em&gt; is the name of the branch which you want to work on.&lt;/p&gt;
+
+&lt;p&gt;While you are working you can save your changes so if it is disturbed by any mistake then you can get it back. You can save like&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git add -A&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git add &amp;lt;file-name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here you are staging the files you change. The changes can be looked at by&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git status&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you can directly commit if you feel this is what to be saved by using&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git commit -m &quot;&amp;lt;commit-message&amp;gt;&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here &lt;em&gt;commit-message&lt;/em&gt; can be related to what you’ve worked on.&lt;/p&gt;
+
+&lt;p&gt;After this process when you want to push the changes to &lt;em&gt;account-repo&lt;/em&gt; then&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git push -u origin &amp;lt;branch-name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;if the branch is &lt;ins&gt;not present&lt;/ins&gt; in your &lt;em&gt;account-repo&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git push origin &amp;lt;branch-name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;if the branch is &lt;ins&gt;present&lt;/ins&gt; in your &lt;em&gt;account-repo&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you can check your updated &lt;em&gt;account-repo&lt;/em&gt; and send a PR for the issue you worked on.&lt;/p&gt;
+
+&lt;h3 id=&quot;playing-with-git&quot;&gt;Playing with git&lt;/h3&gt;
+
+&lt;p&gt;You can check your commits in a particular branch by&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git log&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can add “&lt;em&gt;–oneline&lt;/em&gt;” to the command if you want the commits in one line.&lt;/p&gt;
+
+&lt;p&gt;You can add “&lt;em&gt;–all&lt;/em&gt;” to the command if you want to see all the commits.&lt;/p&gt;
+
+&lt;p&gt;You can add “&lt;em&gt;–graph&lt;/em&gt;” to the command to see the commits in a graph style.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git log --oneling --all --graph&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt; 
+If you have some changes and want to add to the previous commit or change the commit message of the previous commit. Then you have to stage the changes then&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git commit --amend&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+You can check all your recent activities by using&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git reflog&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+You can revert your work to a specific commit and work again by using&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git revert &amp;lt;some-commit&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here &lt;em&gt;some-commit&lt;/em&gt; is the name of the commit you want to go back or if you want to use the position you can use “&lt;ins&gt;HEAD~&amp;lt;position&amp;gt;&lt;/ins&gt;” replace the &lt;position&gt;  with the point where you want to go back.&lt;/position&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+You can even delete your commit or any activity by referring to the history of what you did.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git reset &amp;lt;type&amp;gt; &amp;lt;some-commit&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here type can be “&lt;em&gt;–hard&lt;/em&gt;” or “&lt;em&gt;–soft&lt;/em&gt;” based on you want to completely change the working tree or want to keep it as it is.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+You can show the same changes of your local-repo into your account-repo even if it is completely different by force pushing&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git push -f origin &amp;lt;branch-name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+If you want to squash some commits into one then one of the ways which you can use is&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git rebase -i &amp;lt;some-commit&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then you can choose which commit to &lt;ins&gt;squash&lt;/ins&gt; and which to &lt;ins&gt;pick&lt;/ins&gt; and finally can edit the commit message.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+There are even many more things you can learn about “&lt;strong&gt;git&lt;/strong&gt;“. You can go through &lt;a href=&quot;https://git-scm.com/docs/&quot;&gt;this&lt;/a&gt; link.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 08 Jan 2016 20:34:23 +0530</pubDate>
-        <link>http://localhost:4000/blog/2016/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/welcome-to-jekyll/</guid>
+        <pubDate>Sun, 24 Feb 2019 23:30:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2019/git-with-open-source/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/git-with-open-source/</guid>
         
-        <category>jekyll</category>
+        <category>Open-Source</category>
         
         
-        <category>jekyll</category>
+        <category>Tech</category>
+        
+      </item>
+    
+      <item>
+        <title>KWoC Experience as a Mentor</title>
+        <description>&lt;h3 id=&quot;about-kwoc&quot;&gt;About KWoC&lt;/h3&gt;
+
+&lt;p&gt;First, you might think what &lt;ins&gt;KWoC&lt;/ins&gt; is. It is &lt;strong&gt;Kharagpur Winter of Code&lt;/strong&gt;. It is a 5-week long online programme for the open source developers conducted by open source club at IIT-Kharagpur. This could be helpful for who would participate in &lt;strong&gt;Google Summer of Code&lt;/strong&gt; &lt;strong&gt;(GSoC)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can know more about KWoC from &lt;a href=&quot;https://kwoc.kossiitkgp.org/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-i-got-to-know-about-kwoc&quot;&gt;How I got to know about KWoC&lt;/h3&gt;
+
+&lt;p&gt;I got to know about this programme from my seniors. They advised me to apply as a mentor as I already have a working project in my GitHub. I went to the KWoC website and registered as a mentor to the project. I didn’t even hope for getting selected for that. Then, at last, got selected into the programme as mentor.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-project&quot;&gt;My Project&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/immadisairaj/Quiz&quot;&gt;This&lt;/a&gt; is GitHub link of the project. You can go through it.&lt;/p&gt;
+
+&lt;p&gt;My project is an Android application named &lt;strong&gt;Quiz&lt;/strong&gt;. This uses &lt;a href=&quot;https://opentdb.com/&quot;&gt;Open-Trivia&lt;/a&gt; to get questions.&lt;/p&gt;
+
+&lt;h3 id=&quot;experience-i-had&quot;&gt;Experience I had&lt;/h3&gt;
+
+&lt;p&gt;I felt excited when I got to know that I was selected for the programme. Then I started creating Issues for the application. And people who I don’t know approached me through gitter channel asking for how to start to contribute. I gave a briefing on how to start to contribute. When the Coding Period began the people started looking at the issues and started sending PR’s for the project. First, when I received PR I looked into the code and reviewed that and felt happy to merge that. By receiving some amount of PR’s I felt people liked my project.&lt;/p&gt;
+
+&lt;p&gt;I learned many things through this. The first how to respond to others. I felt different in saying no to the person who asked they would work on it while other is already working but got habituated to that. I sometimes felt difficult in reviewing the PR’s so created a Pull Request Template as I could find it easy to look into it.&lt;/p&gt;
+
+&lt;p&gt;As I included Travis-CI, Mergeable to the project I felt it helped. I didn’t even look the code if it didn’t pass these Tests. This made easy for me on reviewing. I felt it would be more easy for me by adding Contributing file also to the project.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-i-learned-from-it&quot;&gt;What I learned from it&lt;/h3&gt;
+
+&lt;p&gt;&lt;ins&gt;As a &lt;strong&gt;Mentor&lt;/strong&gt;&lt;/ins&gt;, Make sure to have all the files like Description, ReadMe, Contribute, Code of Conduct, License, Pull Request Template, Issue Template. It will not only be useful for the people who contribute to the project but also mentors in reviewing. Merge only PR’s which the project requires. Feel free to communicate with the developers.&lt;/p&gt;
+
+&lt;p&gt;&lt;ins&gt;Assuming as a &lt;strong&gt;Student&lt;/strong&gt;&lt;/ins&gt;, after selecting a project first need to go through the ReadMe and Contribution file then look through the issues in the project and select one which feels good. After this, check if there is someone already working on it and ask whether to work if feel they are not working. Then while working let the commit messages be reasonable. Then before sending the PR, make sure the unnecessary commit messages are squashed and the PR is sent to the branch meant to receive PR’s. Then send a PR based on how the PR template is and wait for the review. After the review is done if any changes suggested, change that and send PR again else it will get merged.&lt;/p&gt;
+
+&lt;p&gt;What I want to tell is Don’t feel bad because your PR is not merged. “PR not merged doesn’t mean you are not good at developing, it means that is not the right thing which is needed for the project”.&lt;/p&gt;
+
+&lt;h3 id=&quot;evolution-of-the-application&quot;&gt;Evolution of the Application&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog//assets/posts/kwoc-experience/before.jpg&quot; /&gt;
+&lt;img src=&quot;/blog//assets/posts/kwoc-experience/after.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Above pictures Left: Before, Right: After&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;statistics&quot;&gt;Statistics&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;PR’s received:&lt;/em&gt; 31&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;PR’s Merged:&lt;/em&gt; 21&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Total Lines Added:&lt;/em&gt; 1788&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Total Lines Removed:&lt;/em&gt; 1264&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Total Commits:&lt;/em&gt; 32&lt;/p&gt;
+
+&lt;p&gt;At last, I thank KWoC in helping me to get the knowledge in Open Source.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 15 Jan 2019 23:30:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2019/kwoc-experience/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/kwoc-experience/</guid>
+        
+        <category>Open-Source</category>
+        
+        
+        <category>Tech</category>
+        
+      </item>
+    
+      <item>
+        <title>Java</title>
+        <description>&lt;p&gt;&lt;strong&gt;What is Java?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Java is an &lt;ins&gt;&lt;em&gt;Object Oriented Programming&lt;/em&gt;&lt;/ins&gt; language that produces software for multiple platforms. It can run on any computer with the help of &lt;ins&gt;Java Virtual Machine&lt;/ins&gt; (JVM). &lt;ins&gt;Java is Platform Independent&lt;/ins&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog//assets/posts/java/java.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;History of Java?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The java project was initiated by &lt;ins&gt;&lt;em&gt;James Gosling&lt;/em&gt;&lt;/ins&gt;, Mike Sheridan, and Patrick Naughton at &lt;ins&gt;Sun Microsystems&lt;/ins&gt; in June 1991. It was first released in the year 1995. Till now there are many versions released (you can check all the versions &lt;a href=&quot;https://en.wikipedia.org/wiki/Java_version_history&quot;&gt;here&lt;/a&gt;). Now java is under &lt;ins&gt;Oracle&lt;/ins&gt; as it acquired Sun Microsystems in 2010.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What Java really means?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Java is an island of Indonesia. It was the place where the first coffee was made. So, java means Coffee.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is Java Virtual Machine (JVM)?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Java applications are &lt;ins&gt;&lt;em&gt;Write Once Run Anywhere&lt;/em&gt;&lt;/ins&gt; (WORA). This is possible through JVM. JVM is an engine which provides runtime environment to Java programs and applications. It is a part of Java Runtime Environment (JRE). It has the calibre to compile and run on any Platform this is how Java is &lt;ins&gt;Platform Independent&lt;/ins&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is Java Development Kit (JDK)?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;JDK is a software development environment which is used for developing Java applications. It includes JRE, java compiler, loader, documentation generator, etc,.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is Object Oriented Programming (OOP)?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It is programming based on object methodology. These objects are organised into classes. Object-Oriented Programming makes it easier for programmers to structure and organise software programs. Because individual objects can be modified without affecting other aspects of the program. The class is  the data format for a given object. Object is an instance of a class. Java is one of the language which is Object Oriented.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 30 Aug 2018 23:30:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2018/java/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/java/</guid>
+        
+        <category>Java</category>
+        
+        
+        <category>Tech</category>
+        
+      </item>
+    
+      <item>
+        <title>Tabla…. What is it?</title>
+        <description>&lt;p&gt;&lt;strong&gt;Tabla is a Hindustani Musical Instrument. It is a Percussion Instrument.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;First, you have to know What &lt;strong&gt;Music&lt;/strong&gt; is?&lt;/p&gt;
+
+&lt;p&gt;&lt;ins&gt;&lt;em&gt;Vocal, Instrument, Dance&lt;/em&gt;&lt;/ins&gt;. All these three together form a Music. Vocal is the Singing part, Instrument gives the flavor to the Song, and last the Dance is where they act according to the Song. This leads to the Music.&lt;/p&gt;
+
+&lt;p&gt;In India, we have two types of Music which are &lt;strong&gt;Hindustani Shastreeya Sangeeth&lt;/strong&gt; (Hindustani) and &lt;strong&gt;Karnataka Shastreeya Sangeeth&lt;/strong&gt; (Carnatic). These are Classical Music forms. &lt;em&gt;Hindustani Classical Music&lt;/em&gt; is from the North part of India and &lt;em&gt;Carnatic Classical Music&lt;/em&gt; is from the South part of India. These forms they have the same 7 swaras (Sa-Shadjam, Re-Rishabham, Ga-Gandharam, Ma-Madyamam, Pa-Panchamam, Da-Daiwatham, Ni-Nishadham). The basic difference between these is in the form of compositions and the concert setup. &lt;em&gt;Hindustani&lt;/em&gt; compositions are Khayal, Dhrupad, Tarana, Thumri, Dhamaar, and concert setup is Singer supported by Harmonium, Tabla, etc. &lt;em&gt;Carnatic&lt;/em&gt; compositions are Varnam, Kriti, Tillana, Javalis etc. and concert setup is Singer supported by Violin, Mridangam, etc. You can know more about Indian Classical Music form &lt;a href=&quot;https://en.wikipedia.org/wiki/Indian_classical_music&quot;&gt;this&lt;/a&gt; link.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog//assets/posts/tabla-what-is-it/hindustani.jpeg&quot; /&gt;
+&lt;img src=&quot;/blog//assets/posts/tabla-what-is-it/carnatic.jpeg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Above pictures Left: Hindustani Music, Right: Carnatic Music&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Musical Instrument&lt;/strong&gt; is an Instrument which produces different sounds. Instruments are used to support the singer while singing. Instrumentalists use these instruments and produce a sound which suits the context of the song. This gives feel to the song.&lt;/p&gt;
+
+&lt;p&gt;You might have a doubt that what percussion is? Instruments are divided again into &lt;ins&gt;&lt;em&gt;Percussion&lt;/em&gt;&lt;/ins&gt; and &lt;ins&gt;&lt;em&gt;Non-Percussion&lt;/em&gt;&lt;/ins&gt; Instruments. All the Drum Instruments (sounded by being struck, scraped or rubbed by hand) come under Percussion. And other Instruments come under Non-Percussion Instruments.&lt;/p&gt;
+
+&lt;p&gt;Where there is Music there are Instruments also. So, here there are both Hindustani and Carnatic Instruments. These instruments are designed according to their respective Music. In the Hindustani Music, one of the Instrument is &lt;strong&gt;Tabla&lt;/strong&gt;. As Tabla is a Drum type Instrument it is a &lt;strong&gt;Percussion Instrument&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog//assets/posts/tabla-what-is-it/tabla.jpeg&quot; /&gt;
+Tabla&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog//assets/posts/tabla-what-is-it/phakawaj.jpeg&quot; /&gt;
+Phakawaj&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tabla&lt;/strong&gt; it is a Hindustani Instrument which consists of two drums Bayan (Big Drum), Tabla (Small Drum). These two are hollow from inside. Bayan is made of Metal and Tabla is made of Wood. The top layer is made of Leather. Bayan is Low pitched and Tabla is High pitched. There is a Hammer which is used for tuning Tabla. Tabla is played using two Hands with different finger moments (both or either of hands). Tabla is originated from &lt;strong&gt;Phakawaj&lt;/strong&gt; which is also a Hindustani Musical Instrument. Tabla was invented by &lt;ins&gt;&lt;em&gt;Ustad Amir Khusro&lt;/em&gt;&lt;/ins&gt; during the 13th Century. Once When Ustad Amir Khusro asked his students to bring his Phakawaj to the Royal Court to play in front of the King his students on the way accidentally broke it. Then Ustad Amir Khusro played on the same with which came a beautiful sound. From then it was called टूटा तो बोला which means “Spoke even Broken”. From then it is now called &lt;strong&gt;Tabla&lt;/strong&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 21 Aug 2018 23:30:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2018/tabla-what-is-it/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/tabla-what-is-it/</guid>
+        
+        <category>Tabla</category>
+        
+        
+        <category>Music</category>
         
       </item>
     

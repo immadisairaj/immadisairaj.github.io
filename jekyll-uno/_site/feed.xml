@@ -3,10 +3,10 @@
   <channel>
     <title>Sai Rajendra Immadi</title>
     <description>Open-Source Enthusiast | Musician</description>
-    <link>http://localhost:4000/blog/</link>
-    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 10 Jun 2020 07:50:06 +0530</pubDate>
-    <lastBuildDate>Wed, 10 Jun 2020 07:50:06 +0530</lastBuildDate>
+    <link>https://immadisairaj.github.io/blog/</link>
+    <atom:link href="https://immadisairaj.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 10 Jun 2020 10:33:13 +0530</pubDate>
+    <lastBuildDate>Wed, 10 Jun 2020 10:33:13 +0530</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -156,8 +156,8 @@ There are even many more things you can learn about “&lt;strong&gt;git&lt;/str
 
 </description>
         <pubDate>Sun, 24 Feb 2019 23:30:00 +0530</pubDate>
-        <link>http://localhost:4000/blog/2019/git-with-open-source/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/git-with-open-source/</guid>
+        <link>https://immadisairaj.github.io/blog/2019/git-with-open-source/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2019/git-with-open-source/</guid>
         
         <category>Open-Source</category>
         
@@ -223,8 +223,8 @@ There are even many more things you can learn about “&lt;strong&gt;git&lt;/str
 
 </description>
         <pubDate>Tue, 15 Jan 2019 23:30:00 +0530</pubDate>
-        <link>http://localhost:4000/blog/2019/kwoc-experience/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/kwoc-experience/</guid>
+        <link>https://immadisairaj.github.io/blog/2019/kwoc-experience/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2019/kwoc-experience/</guid>
         
         <category>Open-Source</category>
         
@@ -263,8 +263,8 @@ There are even many more things you can learn about “&lt;strong&gt;git&lt;/str
 
 </description>
         <pubDate>Thu, 30 Aug 2018 23:30:00 +0530</pubDate>
-        <link>http://localhost:4000/blog/2018/java/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2018/java/</guid>
+        <link>https://immadisairaj.github.io/blog/2018/java/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2018/java/</guid>
         
         <category>Java</category>
         
@@ -304,8 +304,8 @@ Phakawaj&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 21 Aug 2018 23:30:00 +0530</pubDate>
-        <link>http://localhost:4000/blog/2018/tabla-what-is-it/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2018/tabla-what-is-it/</guid>
+        <link>https://immadisairaj.github.io/blog/2018/tabla-what-is-it/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2018/tabla-what-is-it/</guid>
         
         <category>Tabla</category>
         

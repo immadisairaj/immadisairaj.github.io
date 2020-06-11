@@ -4,7 +4,7 @@ description: 'Open-Source Enthusiast | Musician'
 url: 'https://immadisairaj.github.io'
 baseurl: '/blog'
 google_analytics: 'UA-168944360-2'
-# disqus_shortname: 'immadisairaj'
+disqus_shortname: 'immadisairaj-github-io'
 
 author:
   name: 'Sai Rajendra Immadi'

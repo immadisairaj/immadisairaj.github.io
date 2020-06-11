@@ -29,6 +29,7 @@ So, before starting to port the blog I had some queries in my mind if that was t
 - A static site and no special database
 - Comments: Have a Disqus platform for it
 - Site Tracking: Have Google-Analytics integration
+
 So, who does not want to port if I have all the requirements and just missing the first point?
 
 ### How Did I port the Blog?

@@ -1,6 +1,6 @@
 ---
 title:  "KWoC Experience as a Mentor"
-date:   2019-01-15 18:00:00
+date:   2019-01-15 18:00:00 +0530
 categories: [Tech]
 tags: [Open-Source]
 ---

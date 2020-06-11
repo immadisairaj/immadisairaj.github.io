@@ -1,6 +1,6 @@
 ---
 title:  "Git with Open-Source"
-date:   2019-02-24 18:00:00
+date:   2019-02-24 18:00:00 +0530
 categories: [Tech]
 tags: [Open-Source]
 ---

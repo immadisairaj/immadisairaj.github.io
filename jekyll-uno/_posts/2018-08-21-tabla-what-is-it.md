@@ -1,6 +1,6 @@
 ---
 title:  "Tabla…. What is it?"
-date:   2018-08-21 18:00:00
+date:   2018-08-21 18:00:00 +0530
 categories: [Music]
 tags: [Tabla]
 ---

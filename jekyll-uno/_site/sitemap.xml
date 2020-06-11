@@ -3,9 +3,24 @@
   
     
     <url>
+      <loc>https://immadisairaj.github.io/2020/port-the-blog/</loc>
+      
+        <lastmod>2020-06-11T12:07:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>https://immadisairaj.github.io/2019/git-with-open-source/</loc>
       
-        <lastmod>2019-02-24T23:30:00+05:30</lastmod>
+        <lastmod>2019-02-24T18:00:00+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -20,7 +35,7 @@
     <url>
       <loc>https://immadisairaj.github.io/2019/kwoc-experience/</loc>
       
-        <lastmod>2019-01-15T23:30:00+05:30</lastmod>
+        <lastmod>2019-01-15T18:00:00+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -35,7 +50,7 @@
     <url>
       <loc>https://immadisairaj.github.io/2018/java/</loc>
       
-        <lastmod>2018-08-30T23:30:00+05:30</lastmod>
+        <lastmod>2018-08-30T18:00:00+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -50,7 +65,7 @@
     <url>
       <loc>https://immadisairaj.github.io/2018/tabla-what-is-it/</loc>
       
-        <lastmod>2018-08-21T23:30:00+05:30</lastmod>
+        <lastmod>2018-08-21T18:00:00+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -68,7 +83,7 @@
     <url>
       <loc>https://immadisairaj.github.io/feed.xml</loc>
       
-        <lastmod>2020-06-11T12:01:08+05:30</lastmod>
+        <lastmod>2020-06-11T13:40:06+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -83,7 +98,7 @@
     <url>
       <loc>https://immadisairaj.github.io/humans.txt</loc>
       
-        <lastmod>2020-06-11T12:01:08+05:30</lastmod>
+        <lastmod>2020-06-11T13:40:06+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -102,7 +117,7 @@
     <url>
       <loc>https://immadisairaj.github.io/css/main.css</loc>
       
-        <lastmod>2020-06-11T12:01:08+05:30</lastmod>
+        <lastmod>2020-06-11T13:40:06+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -121,7 +136,7 @@
     <url>
       <loc>https://immadisairaj.github.io/assets/css/style.css</loc>
       
-        <lastmod>2020-06-11T12:01:08+05:30</lastmod>
+        <lastmod>2020-06-11T13:40:06+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>

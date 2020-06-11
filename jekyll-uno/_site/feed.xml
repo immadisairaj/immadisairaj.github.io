@@ -5,9 +5,59 @@
     <description>Open-Source Enthusiast | Musician</description>
     <link>https://immadisairaj.github.io/blog/</link>
     <atom:link href="https://immadisairaj.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 11 Jun 2020 12:01:08 +0530</pubDate>
-    <lastBuildDate>Thu, 11 Jun 2020 12:01:08 +0530</lastBuildDate>
+    <pubDate>Thu, 11 Jun 2020 13:40:06 +0530</pubDate>
+    <lastBuildDate>Thu, 11 Jun 2020 13:40:06 +0530</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Port The Blog</title>
+        <description>&lt;p&gt;This blog tells why and how I have ported my blog from WordPress to Jekyll hosted in GitHub.&lt;/p&gt;
+
+&lt;h3 id=&quot;did-i-like-wordpress&quot;&gt;Did I like WordPress?&lt;/h3&gt;
+
+&lt;p&gt;Yes, I liked the WordPress blogging site. I had chosen the free version of the site as I was, however, using it to blog. The site had all the custom templates and even have enough storage. I didn’t even need to change the code inside if I had to any customizations, everything was dynamic and pretty handy. I also had few blogs hosted there, and now I don’t update it anymore. You can check out the site &lt;a href=&quot;https://immadisairaj.wordpress.com&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;personal-website&quot;&gt;Personal Website&lt;/h3&gt;
+
+&lt;p&gt;Initially, I only had a single website only for blogging though I didn’t blog much. I had a thought of having my website of my own to show-off my skills. I had forked few of the projects before and tried hosting them in my GitHub Page, I didn’t like any and deleted the repository. So, as I have specialization in Flutter but didn’t build any &lt;em&gt;flutter-web&lt;/em&gt; projects, I thought of giving it a try and started building a personal portfolio which looks simple and minimal. The project was done as I expected with minimal UI, though it took time to build it. You can check the project &lt;a href=&quot;https://github.com/immadisairaj/Portfolio&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now I have a personal website hosted in GitHub Pages and also a blog hosted in WordPress which has redirection from both sides.&lt;/p&gt;
+
+&lt;h3 id=&quot;inspiration-to-port-the-blog&quot;&gt;Inspiration to port the Blog&lt;/h3&gt;
+
+&lt;p&gt;I was happy with both the personal website and blog I had. But something was bothering me, which is, both the sites have a different domain. Few of my friends have taken up Jekyll free templates and had their blog sites set up in their GitHub Pages. I had a small doubt that if I can have a complete Jekyll project in a sub-directory inside my website build so both my blog and the personal website would come under the same domain. I started searching in google if I can have a complete website in a sub-directory and after reading many blogs finally got an exact blog which suited my requirement.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-did-i-choose-to-port-the-blog&quot;&gt;Why Did I choose to port the Blog?&lt;/h3&gt;
+
+&lt;p&gt;So, before starting to port the blog I had some queries in my mind if that was the right choice or not. I think most of them also might have the same queries if they are planning to port their blogging site. I think mentioning the queries maybe are not helpful, but I had a few reasons why I ported the blog.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;As already said, both the sites can come under the same domain&lt;/li&gt;
+  &lt;li&gt;I can write blog posts in markdown&lt;/li&gt;
+  &lt;li&gt;A static site and no special database&lt;/li&gt;
+  &lt;li&gt;Comments: Have a Disqus platform for it&lt;/li&gt;
+  &lt;li&gt;Site Tracking: Have Google-Analytics integration
+So, who does not want to port if I have all the requirements and just missing the first point?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-did-i-port-the-blog&quot;&gt;How Did I port the Blog?&lt;/h3&gt;
+
+&lt;p&gt;I had searched for a few free Jekyll templates which suit my taste and includes all that I need and found out a theme &lt;a href=&quot;https://github.com/joshgerdes/jekyll-uno&quot;&gt;Jekyll-Uno&lt;/a&gt;. I downloaded the project and made all the customizations whatever I needed, it took a bit of time as that template was last updated 2 years back and also didn’t have proper documentation on how to customize. So, I finished having my blogging website ready to deploy. But, how do I link it in sud-directory of the personal website and have it running? As I told earlier, I found a hack to do that, and you can find all the detailed instruction in the &lt;em&gt;README&lt;/em&gt; file of &lt;a href=&quot;https://github.com/immadisairaj/immadisairaj.github.io&quot;&gt;this&lt;/a&gt; repository.&lt;/p&gt;
+
+&lt;p&gt;Now, I had both the sites under a single domain and this is the very first blog I am writing after I had ported the blog.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 11 Jun 2020 12:07:00 +0530</pubDate>
+        <link>https://immadisairaj.github.io/blog/2020/port-the-blog/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2020/port-the-blog/</guid>
+        
+        <category>Open-Source</category>
+        
+        <category>Blog</category>
+        
+        
+        <category>Tech</category>
+        
+      </item>
     
       <item>
         <title>Git with Open-Source</title>
@@ -155,7 +205,7 @@ If you want to squash some commits into one then one of the ways which you can u
 There are even many more things you can learn about “&lt;strong&gt;git&lt;/strong&gt;“. You can go through &lt;a href=&quot;https://git-scm.com/docs/&quot;&gt;this&lt;/a&gt; link.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 24 Feb 2019 23:30:00 +0530</pubDate>
+        <pubDate>Sun, 24 Feb 2019 18:00:00 +0530</pubDate>
         <link>https://immadisairaj.github.io/blog/2019/git-with-open-source/</link>
         <guid isPermaLink="true">https://immadisairaj.github.io/blog/2019/git-with-open-source/</guid>
         
@@ -222,7 +272,7 @@ There are even many more things you can learn about “&lt;strong&gt;git&lt;/str
 &lt;p&gt;At last, I thank KWoC in helping me to get the knowledge in Open Source.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 15 Jan 2019 23:30:00 +0530</pubDate>
+        <pubDate>Tue, 15 Jan 2019 18:00:00 +0530</pubDate>
         <link>https://immadisairaj.github.io/blog/2019/kwoc-experience/</link>
         <guid isPermaLink="true">https://immadisairaj.github.io/blog/2019/kwoc-experience/</guid>
         
@@ -262,7 +312,7 @@ There are even many more things you can learn about “&lt;strong&gt;git&lt;/str
 &lt;p&gt;It is programming based on object methodology. These objects are organised into classes. Object-Oriented Programming makes it easier for programmers to structure and organise software programs. Because individual objects can be modified without affecting other aspects of the program. The class is  the data format for a given object. Object is an instance of a class. Java is one of the language which is Object Oriented.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 30 Aug 2018 23:30:00 +0530</pubDate>
+        <pubDate>Thu, 30 Aug 2018 18:00:00 +0530</pubDate>
         <link>https://immadisairaj.github.io/blog/2018/java/</link>
         <guid isPermaLink="true">https://immadisairaj.github.io/blog/2018/java/</guid>
         
@@ -303,7 +353,7 @@ Phakawaj&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tabla&lt;/strong&gt; it is a Hindustani Instrument which consists of two drums Bayan (Big Drum), Tabla (Small Drum). These two are hollow from inside. Bayan is made of Metal and Tabla is made of Wood. The top layer is made of Leather. Bayan is Low pitched and Tabla is High pitched. There is a Hammer which is used for tuning Tabla. Tabla is played using two Hands with different finger moments (both or either of hands). Tabla is originated from &lt;strong&gt;Phakawaj&lt;/strong&gt; which is also a Hindustani Musical Instrument. Tabla was invented by &lt;ins&gt;&lt;em&gt;Ustad Amir Khusro&lt;/em&gt;&lt;/ins&gt; during the 13th Century. Once When Ustad Amir Khusro asked his students to bring his Phakawaj to the Royal Court to play in front of the King his students on the way accidentally broke it. Then Ustad Amir Khusro played on the same with which came a beautiful sound. From then it was called टूटा तो बोला which means “Spoke even Broken”. From then it is now called &lt;strong&gt;Tabla&lt;/strong&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 21 Aug 2018 23:30:00 +0530</pubDate>
+        <pubDate>Tue, 21 Aug 2018 18:00:00 +0530</pubDate>
         <link>https://immadisairaj.github.io/blog/2018/tabla-what-is-it/</link>
         <guid isPermaLink="true">https://immadisairaj.github.io/blog/2018/tabla-what-is-it/</guid>
         

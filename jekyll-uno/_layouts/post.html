@@ -15,6 +15,14 @@ layout: default
   <section class="post">
     {{ content }}
   </section>
+  <br></br>
+  <div class="license-wrapper
+  d-flex justify-content-between align-items-center pt-2 pb-2">
+    This post is licensed under
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+    by the author.
+  </div>
+  <br></br>
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 </article>
 {% if page.comments != false %}{% include disqus.html %}{% endif %}

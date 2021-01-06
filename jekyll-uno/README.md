@@ -27,6 +27,8 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 3. Install Ruby gems: `bundle install`
 4. Start Jekyll server: `JEKYLL_ENV=production bundle exec jekyll serve --watch`
 
+If you want to update ruby gems : `bundle update` after 3rd step and do the 3rd step after this again
+
 Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
 
 ---

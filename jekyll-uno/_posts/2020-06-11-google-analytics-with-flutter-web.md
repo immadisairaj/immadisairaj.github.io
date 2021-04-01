@@ -20,17 +20,33 @@ Go to [analytics.google.com][analytics] and login with your account. Then, creat
 So, assuming you have already set-up the flutter-web project.
 
 Create a new file named `app.js` under `/web`. And the copy the below code into it.
+
+*Old:*
 ```javascript
+// Warning: Old method, please prefer the new script (below)
 // file: /web/app.js
 function sendNavigation(location) {
     ga('send', 'pageview', location);
 }
 ```
 
+*New:*
+```javascript
+// file: /web/app.js
+function sendNavigation(location) {
+    // Replace UA-XXXXXXXXX-X with Google Analytics ID
+    gtag('config', 'UA-XXXXXXXXX-X', { page_path: location });
+}
+```
+
 You might already have a file `/web/index.html`. Add the following into the *html* file inside `<head>` and `</head>`.
+
+*Old:*
 ```html
+<!-- Warning: Old method, please prefer the new script (below) -->
+<!-- file: /web/index.html -->
 <head>
-    <!-- .. -->
+    <!-- ... -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,7 +57,27 @@ You might already have a file `/web/index.html`. Add the following into the *htm
         ga('create', 'UA-XXXXXXXXX-X', 'auto');
         ga('send', 'pageview');
     </script>
-    <!-- .. -->
+    <!-- ... -->
+    <script src="app.js" defer></script>
+</head>
+```
+
+*New:*
+```html
+<!-- file: /web/index.html -->
+<head>
+    <!-- ... -->
+    <!-- Replace UA-XXXXXXXXX-X with Google Analytics ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Replace UA-XXXXXXXXX-X with Google Analytics ID
+      gtag('config', 'UA-XXXXXXXXX-X', { send_page_view: false });
+    </script>
+    <!-- ... -->
     <script src="app.js" defer></script>
 </head>
 ```

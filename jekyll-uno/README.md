@@ -29,7 +29,7 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 
 If you want to update ruby gems : `bundle update` after 3rd step and do the 3rd step after this again
 
-Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+Access via: [http://localhost:4000/blog/](http://localhost:4000/blog/)
 
 ---
 

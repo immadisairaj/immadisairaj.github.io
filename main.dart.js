@@ -56983,7 +56983,7 @@ R.a5O.prototype={
 $0(){C.Q.h1(window,"https://www.instagram.com/immadisairaj/","Instagram")},
 $S:1}
 R.a5P.prototype={
-$0(){C.Q.h1(window,"mailto:immadisairaj@immadisairaj.me","Mail")},
+$0(){C.Q.h1(window,"mailto:immadirajendra.sai@gmail.com","Mail")},
 $S:1}
 T.F4.prototype={
 M(a,b){var s=null

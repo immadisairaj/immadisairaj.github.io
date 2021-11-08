@@ -13,8 +13,8 @@ First, you have to know What **Music** is?
 
 In India, we have two types of Music which are **Hindustani Shastreeya Sangeeth** (Hindustani) and **Karnataka Shastreeya Sangeeth** (Carnatic). These are Classical Music forms. *Hindustani Classical Music* is from the North part of India and *Carnatic Classical Music* is from the South part of India. These forms they have the same 7 swaras (Sa-Shadjam, Re-Rishabham, Ga-Gandharam, Ma-Madyamam, Pa-Panchamam, Da-Daiwatham, Ni-Nishadham). The basic difference between these is in the form of compositions and the concert setup. *Hindustani* compositions are Khayal, Dhrupad, Tarana, Thumri, Dhamaar, and concert setup is Singer supported by Harmonium, Tabla, etc. *Carnatic* compositions are Varnam, Kriti, Tillana, Javalis etc. and concert setup is Singer supported by Violin, Mridangam, etc. You can know more about Indian Classical Music form [this][carnatic] link.
 
-<img src="{{site.baseurl}}//assets/posts/tabla-what-is-it/hindustani.jpeg">
-<img src="{{site.baseurl}}//assets/posts/tabla-what-is-it/carnatic.jpeg">
+<img style="width: 45%;" src="{{site.baseurl}}//assets/posts/tabla-what-is-it/hindustani.jpeg">
+<img style="width: 45%;" src="{{site.baseurl}}//assets/posts/tabla-what-is-it/carnatic.jpeg">
 
 *Above pictures Left: Hindustani Music, Right: Carnatic Music*
 

@@ -3,7 +3,7 @@ title:  "Effort Behind a Dance Program"
 date:   2021-11-08 13:27:00 +0530
 categories: [Music]
 tags: [Bharatanatyam]
-image: "/assets/posts/effort-behind-a-dance-program/make-up.jpeg"
+image: "/assets/posts/effort-behind-a-dance-program/thumbnil.jpeg"
 ---
 
 How is a Bharatanatyam Dance Program organized? This blog answers the question in detail.

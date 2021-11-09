@@ -105,7 +105,7 @@ It helps in the output of the program. It includes the backdrops required, visua
 
 ### Costumes and Make-up
 
-CCostumes and Make-up are chosen and selected to show the properness of the performer role. Costumes can either be rented or stiched (new). Hiring a Make-up person(s) to make the performers close to their performing roles gives a better look than self make-up. Getting costumes and make-up also include the props needed for the performs.
+Costumes and Make-up are chosen and selected to show the properness of the performer role. Costumes can either be rented or stiched (new). Hiring a Make-up person(s) to make the performers close to their performing roles gives a better look than self make-up. Getting costumes and make-up also include the props needed for the performs.
 
 <p align="center">
     <img src="{{site.baseurl}}//assets/posts/effort-behind-a-dance-program/make-up.jpeg">
@@ -170,7 +170,7 @@ During the dance performance includes the following: (behind)
 
 ### Post Dance Performance
 
-After the dance outstanding performance includes the following:
+After the dance performance includes the following:
 1. To make sure all the participants, guests reach their respective places safely.
 2. To collect the photos and videos from Cameramen.
 3. To share the pictures, content to the press & media for press coverage.

@@ -2,7 +2,7 @@
 title:  "Effort Behind a Dance Program"
 date:   2021-11-08 13:27:00 +0530
 categories: [Music]
-tags: [Bharatanatyam]
+tags: [Bharatanatyam, Music]
 image: "/assets/posts/effort-behind-a-dance-program/thumbnil.jpeg"
 ---
 

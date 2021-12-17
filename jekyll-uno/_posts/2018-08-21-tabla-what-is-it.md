@@ -2,7 +2,7 @@
 title:  "Tabla…. What is it?"
 date:   2018-08-21 18:00:00 +0530
 categories: [Music]
-tags: [Tabla]
+tags: [Tabla, Music]
 image: "/assets/posts/tabla-what-is-it/tabla.jpeg"
 ---
 **Tabla is a Hindustani Musical Instrument. It is a Percussion Instrument.**

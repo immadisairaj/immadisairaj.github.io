@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Website made with Flutter by Sai Rajendra Immadi">
+  <meta name="description" content="A new Flutter project.">
 
   <html prefix="og: http://ogp.me/ns#">
   <meta property="og:url" content="https://immadisairaj.github.io/" />
   <meta property="og:image" content="logo.png" />
   <meta property="og:title" content="immadisairaj" />
-  <meta property="og:description" content="Website made with Flutter by Sai Rajendra Immadi" />
+  <meta property="og:description" content="Sai Rajendra Immadi" />
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Sai Rajendra Immadi">
+  <meta name="apple-mobile-web-app-title" content="website">
   <link rel="apple-touch-icon" href="logo.png">
-  <!-- Replace Favicon with Custom logo -->
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="logo.png"/>
-  <!-- Replace Favicon with Custom logo -->
+  <link rel="icon" type="image/png" href="logo.png"/>
 
   <!-- The Following is for Google Analytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,25 +44,81 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    // Replace UA-XXXXXXXXX-X with Google Analytics ID
-    gtag('config', 'UA-168944360-2', { send_page_view: false });
+    // // Replace UA-XXXXXXXXX-X with Google Analytics ID
+    gtag('config', 'UA-168944360-2');
+    // gtag('config', 'UA-168944360-2', { send_page_view: false });
   </script>
 
-  <title>Sai Rajendra Immadi</title>
+  <title>immadisairaj</title>
   <link rel="manifest" href="manifest.json">
-  <script src="app.js" defer></script>
 </head>
-<body id="app-container">
+<body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
+    var serviceWorkerVersion = '2420689454';
+    var scriptLoaded = false;
+    function loadMainDartJs() {
+      if (scriptLoaded) {
+        return;
+      }
+      scriptLoaded = true;
+      var scriptTag = document.createElement('script');
+      scriptTag.src = 'main.dart.js';
+      scriptTag.type = 'application/javascript';
+      document.body.append(scriptTag);
+    }
+
     if ('serviceWorker' in navigator) {
+      // Service workers are supported. Use them.
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=936986830');
+        // Wait for registration to finish before dropping the <script> tag.
+        // Otherwise, the browser will load the script multiple times,
+        // potentially different versions.
+        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+        navigator.serviceWorker.register(serviceWorkerUrl)
+          .then((reg) => {
+            function waitForActivation(serviceWorker) {
+              serviceWorker.addEventListener('statechange', () => {
+                if (serviceWorker.state == 'activated') {
+                  console.log('Installed new service worker.');
+                  loadMainDartJs();
+                }
+              });
+            }
+            if (!reg.active && (reg.installing || reg.waiting)) {
+              // No active web worker and we have installed or are installing
+              // one for the first time. Simply wait for it to activate.
+              waitForActivation(reg.installing || reg.waiting);
+            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
+              // When the app updates the serviceWorkerVersion changes, so we
+              // need to ask the service worker to update.
+              console.log('New service worker available.');
+              reg.update();
+              waitForActivation(reg.installing);
+            } else {
+              // Existing service worker is still good.
+              console.log('Loading app from service worker.');
+              loadMainDartJs();
+            }
+          });
+
+        // If service worker doesn't succeed in a reasonable amount of time,
+        // fallback to plaint <script> tag.
+        setTimeout(() => {
+          if (!scriptLoaded) {
+            console.warn(
+              'Failed to load app from service worker. Falling back to plain <script> tag.',
+            );
+            loadMainDartJs();
+          }
+        }, 4000);
       });
+    } else {
+      // Service workers not supported. Just drop the <script> tag.
+      loadMainDartJs();
     }
   </script>
-  <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>

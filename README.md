@@ -8,9 +8,9 @@ This website is my personal website hosted at [immadisairaj.github.io](https://i
 
 The Portfolio of this website is built using Flutter.
 
-Portfolio Repo: [link](https://github.com/immadisairaj/Portfolio)
+Website Repo: [link](https://github.com/immadisairaj/website)
 
-The root of this repository has the build file of the flutter from the Portfolio Project.
+The root of this repository has the build file of the flutter from the website Project.
 
 ### Jekyll:
 

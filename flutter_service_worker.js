@@ -3,26 +3,26 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "281f2a7b1646c3dea6feea25f04fa556",
-"index.html": "ac12fb36c833764611517591bc67f1d5",
-"/": "ac12fb36c833764611517591bc67f1d5",
-"main.dart.js": "d117c1e1915ab31d31cdc3835591c648",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
+  "version.json": "980547175e325fe622a3362b84d55b6a",
+"index.html": "b031c35e713b89902ad88b455fc0ef40",
+"/": "b031c35e713b89902ad88b455fc0ef40",
+"main.dart.js": "0f1dd70730503d4202e3342d1f8e5f39",
 "logo.png": "639b56a22e988dce81d486a3ad21ff71",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
+"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "82febe992bcd1934898d1506251f5b31",
-"assets/AssetManifest.json": "dd2272fd144586eacce3ca134ae9c44a",
-"assets/NOTICES": "fad8fa95fd823f93b5c3abed54b5a521",
-"assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
+"manifest.json": "90c454c29b48f08bc06627d125f70466",
+"assets/AssetManifest.json": "491f300584ee76691ac1f791d93d4b8e",
+"assets/NOTICES": "87e91b004719fec7579ded890d87cddd",
+"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "2aa350bd2aeab88b601a593f793734c0",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "2bca5ec802e40d3f4b60343e346cedde",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "5a37ae808cf9f652198acde612b5328d",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/assets/Rajendra_CV.pdf": "e31a417e4f725962aa82f412e8b1e057",
-"assets/assets/Rajendra.jpg": "f87f810c3ab5349b22ae4381f72e1ffc",
-"app.js": "56fcf4b5865bf6ff6f97872c0e971025"
+"assets/assets/logo.png": "639b56a22e988dce81d486a3ad21ff71",
+"canvaskit/canvaskit.js": "43fa9e17039a625450b6aba93baf521e",
+"canvaskit/profiling/canvaskit.js": "f3bfccc993a1e0bfdd3440af60d99df4",
+"canvaskit/profiling/canvaskit.wasm": "a9610cf39260f60fbe7524a785c66101",
+"canvaskit/canvaskit.wasm": "04ed3c745ff1dee16504be01f9623498"
 };
 
 // The application shell files that are downloaded before a service worker can

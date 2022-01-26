@@ -4,9 +4,9 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "980547175e325fe622a3362b84d55b6a",
-"index.html": "eb7d226a661a68fd55407893df6b4cf5",
-"/": "eb7d226a661a68fd55407893df6b4cf5",
-"main.dart.js": "06283dc6b328b08ccc3f4ed829a32127",
+"index.html": "d6f3acedf5340d0fb5d0d9bb281e3abc",
+"/": "d6f3acedf5340d0fb5d0d9bb281e3abc",
+"main.dart.js": "7106501217e36949535394276c5c3cdc",
 "logo.png": "639b56a22e988dce81d486a3ad21ff71",
 "manifest.json": "90c454c29b48f08bc06627d125f70466",
 "assets/AssetManifest.json": "e1ff5ac138986718f2dffb8720bbe733",
@@ -16,7 +16,7 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/assets/rive/s-logo-rotation.riv": "a772d2be0b8d42992f392b87d860ca9b",
 "assets/assets/rive/whale-loading.riv": "3a5db84f95e75fb22a7f6185525cc409",
-"assets/assets/rive/water-home.riv": "b9120f8bc59521eec36ab354bb2546d8",
+"assets/assets/rive/water-home.riv": "1736d0a0566fa49d1189578475b11a4a",
 "assets/assets/logo.png": "639b56a22e988dce81d486a3ad21ff71",
 "canvaskit/canvaskit.js": "43fa9e17039a625450b6aba93baf521e",
 "canvaskit/profiling/canvaskit.js": "f3bfccc993a1e0bfdd3440af60d99df4",

@@ -12,6 +12,9 @@ Website Repo: [link](https://github.com/immadisairaj/website)
 
 The root of this repository has the build file of the flutter from the website Project.
 
+__Note:__ Blog moved to
+[https://github.com/immadisairaj/blog](https://github.com/immadisairaj/blog)
+
 ### Jekyll:
 
 The blog site uses a Jekyll Theme: Uno

@@ -54145,7 +54145,7 @@ case 2:if(!c)throw A.b("Could not launch "+a)
 return A.ac(null,r)}})
 return A.ad($async$oH,r)}}
 A.a0U.prototype={
-$0(){return this.a.oH("https://immadisairaj.github.io/carousel-portfolio")},
+$0(){return this.a.oH("https://immadisairaj.github.io/CarouselPortfolio")},
 $S:0}
 A.a0T.prototype={
 $0(){var s,r,q,p,o=this.a,n=this.b

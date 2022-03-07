@@ -63999,9 +63999,10 @@ if(!s.d&&!s.e&&!s.c)p.push(A.adU(new A.yW(new A.a2B(s),r),B.LN,q))
 if(s.d||s.e)p.push(A.adU(new A.wn(new A.a2C(s),r),B.LM,q))
 if(s.e)p.push(B.DG)
 return A.aiK(r,s.a,B.B2,A.amb(),r,new A.a2D(s),r,p,!1,r,s.b)},
-ga3F(){if(this.c)return new A.hY(!1,!1,!0)
-if(this.d)return new A.hY(!0,!1,!1)
-if(this.e)return new A.hY(!1,!0,!1)
+ga3F(){if(this.c){self.sendNavigation("/404")
+return new A.hY(!1,!1,!0)}if(this.d){self.sendNavigation("/home")
+return new A.hY(!0,!1,!1)}if(this.e){self.sendNavigation("/about")
+return new A.hY(!1,!0,!1)}self.sendNavigation("/")
 return new A.hY(!1,!1,!1)},
 np(a){return this.O8(a)},
 O8(a){var s=0,r=A.a6(t.H),q,p=this,o,n

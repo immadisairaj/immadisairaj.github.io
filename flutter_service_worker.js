@@ -4,9 +4,9 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "980547175e325fe622a3362b84d55b6a",
-"index.html": "94b079586599a78713a80580ce402c75",
-"/": "94b079586599a78713a80580ce402c75",
-"main.dart.js": "f4618ae403cee9535d9fd3c903e648ca",
+"index.html": "8c31ac1dea471e6352e380128fa7417c",
+"/": "8c31ac1dea471e6352e380128fa7417c",
+"main.dart.js": "dd576d17c4a5dc64941930f04307dddc",
 "logo.png": "639b56a22e988dce81d486a3ad21ff71",
 "manifest.json": "90c454c29b48f08bc06627d125f70466",
 "assets/AssetManifest.json": "31828645d6163f57c7dd08763236c70f",
@@ -20,6 +20,7 @@ const RESOURCES = {
 "assets/assets/rive/water-home.riv": "ee3570ad4892259abed62a733a40839f",
 "assets/assets/logo.png": "639b56a22e988dce81d486a3ad21ff71",
 "assets/assets/rajendra.jpeg": "718a4f992a1ea0738b7372ae21eebae6",
+"app.js": "56fcf4b5865bf6ff6f97872c0e971025",
 "canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
 "canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
 "canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",

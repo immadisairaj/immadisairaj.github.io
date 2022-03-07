@@ -4,8 +4,8 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "980547175e325fe622a3362b84d55b6a",
-"index.html": "8096d397760c3b87f8ed7f6e2e2eed01",
-"/": "8096d397760c3b87f8ed7f6e2e2eed01",
+"index.html": "94b079586599a78713a80580ce402c75",
+"/": "94b079586599a78713a80580ce402c75",
 "main.dart.js": "f4618ae403cee9535d9fd3c903e648ca",
 "logo.png": "639b56a22e988dce81d486a3ad21ff71",
 "manifest.json": "90c454c29b48f08bc06627d125f70466",
@@ -14,7 +14,7 @@ const RESOURCES = {
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/fonts/MaterialIcons-Regular.otf": "7e7a6cccddf6d7b20012a548461d5d81",
-"assets/assets/rive/neon-bike.riv": "1b037459e21ea31145387f4e4a999c35",
+"assets/assets/rive/neon-bike.riv": "639905d813b16be438a7de2ebd5603fc",
 "assets/assets/rive/s-logo-rotation.riv": "a772d2be0b8d42992f392b87d860ca9b",
 "assets/assets/rive/whale-loading.riv": "3a5db84f95e75fb22a7f6185525cc409",
 "assets/assets/rive/water-home.riv": "ee3570ad4892259abed62a733a40839f",

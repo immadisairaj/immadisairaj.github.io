@@ -64342,7 +64342,9 @@ l=l.d
 s=k<l
 r=s?k*0.9:k*0.7
 q=a!=null
-if(q&&a.c!==k&&a.d!==l)p=A.b(n.r,"_profileImageCurrentPosition")
+if(q)l=a.c!==k||a.d!==l
+else l=!1
+if(l)p=A.b(n.r,"_profileImageCurrentPosition")
 else{if(q)return
 p=B.jF}l=n.a
 if(s){k=l.d
@@ -64359,7 +64361,9 @@ l=l.d
 s=k<l
 r=s?k*0.9:k*0.7
 q=a!=null
-if(q&&a.c!==k&&a.d!==l)p=A.b(n.Q,"_bioTextCurrentPosition")
+if(q)l=a.c!==k||a.d!==l
+else l=!1
+if(l)p=A.b(n.Q,"_bioTextCurrentPosition")
 else{if(q)return
 p=B.jE}if(s){l=n.a.d
 o=new A.e0(3.3*l/9,0,l/9,0)}else o=new A.e0(10,3.5*r/9,10,0.5*r/9)

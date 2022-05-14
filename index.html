@@ -64,72 +64,86 @@
     }
   </style>
 
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    var serviceWorkerVersion = '1973725037';
-    var scriptLoaded = false;
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
+<script>
+  // The value below is injected by flutter build, do not touch.
+  var serviceWorkerVersion = '2879999810';
+</script>
+
+<div id="loading">
+  <style>
+    body {
+      inset: 0; overflow: hidden;
+      margin: 0; padding: 0;
+      position: fixed;
+    }
+    #loading {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
       }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
+    #loading .loader{
+      border: 16px solid #f3f3f3;
+      border-top: 16px solid cyan;
+      border-bottom: 16px solid cyan;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+      opacity: 0.8;
     }
+    #loading.main_done .loader {
+      opacity: 1;
+      border-right: 16px solid cyan;
+      border-left: 16px solid cyan;
+    }
+    #loading.init_done .loader {
+      animation: .33s ease-in-out 0s 1 forwards zooooom;
+      opacity: 0.5;
+    }
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes zooooom {
+      from { transform: scale(1) }
+      to { transform: scale(10)}
+    }
+    </style>
+    <div class="loader"></div>
+</div>
 
-    if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing || reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
-
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
-            );
-            loadMainDartJs();
-          }
-        }, 4000);
+<!-- This script adds the flutter initialization JS code -->
+<script src="flutter.js" defer></script>
+</head>
+<body>
+<script>
+  window.addEventListener('load', function(ev) {
+    var loading = document.querySelector('#loading');
+    // Download main.dart.js
+    _flutter.loader.loadEntrypoint({
+      serviceWorker: {
+        serviceWorkerVersion: serviceWorkerVersion,
+      }
+    }).then(function(engineInitializer) {
+      loading.classList.add('main_done');
+      return engineInitializer.initializeEngine();
+    }).then(function(appRunner) {
+      loading.classList.add('init_done');
+      return appRunner.runApp();
+    }).then(function(app) {
+        // Wait a few milliseconds so users can see the "zoooom" animation
+        // before getting rid of the "loading" div.
+        window.setTimeout(function() {
+          loading.remove();
+        }, 200);
       });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
-    }
-  </script>
+  });
+</script>
 </body>
 </html>

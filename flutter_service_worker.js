@@ -7,10 +7,10 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
 "canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
 "canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"index.html": "b3bcf6ac6bba13b7c7897825ba135858",
-"/": "b3bcf6ac6bba13b7c7897825ba135858",
+"index.html": "609182728c84639675769e8d6878948e",
+"/": "609182728c84639675769e8d6878948e",
 "resume.pdf": "cf64504b002b8c775d40c3943543977c",
-"main.dart.js": "f25da95b3ae2116b72c22b4f6857a14a",
+"main.dart.js": "be29355a59c562a0be447f688fe8824a",
 "manifest.json": "90c454c29b48f08bc06627d125f70466",
 "version.json": "980547175e325fe622a3362b84d55b6a",
 "flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
@@ -27,6 +27,7 @@ const RESOURCES = {
 "assets/assets/projects/digital-lcd-number.png": "b4729a9530f5fc290f29c229efa31efa",
 "assets/assets/projects/sai-voice.png": "0a12ed7f7de2047ddacb8ca5a0f23baa",
 "assets/assets/projects/carousel-portfolio.png": "345dc1978337fd4bc6da9dd01af37da6",
+"assets/assets/projects/sai-chits.png": "9080a8e4ea72d5a7cb92fae17d73e4fa",
 "assets/assets/projects/harry-potter.jpg": "edd79c24c8ec72290c0af10a063f1a2e",
 "assets/assets/projects/codeforces-app.jpeg": "d2c69fd0096122a7b66966d369b8b24e",
 "assets/assets/projects/distributed-group-chat.png": "fe9003dc60baa700e40e037d507f6e34",
@@ -41,7 +42,7 @@ const RESOURCES = {
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "613e4cc1af0eb5148b8ce409ad35446d",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dd3c4233029270506ecc994d67785a37",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "d1722d5cf2c7855862f68edb85e31f88",
-"assets/AssetManifest.json": "0cd35e3d1627cf4d654fbc801ff3f928"
+"assets/AssetManifest.json": "493175e799ee1bd63575a3a8b7e5820e"
 };
 
 // The application shell files that are downloaded before a service worker can

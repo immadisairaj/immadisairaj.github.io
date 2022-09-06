@@ -3,46 +3,47 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"index.html": "609182728c84639675769e8d6878948e",
-"/": "609182728c84639675769e8d6878948e",
-"resume.pdf": "cf64504b002b8c775d40c3943543977c",
-"main.dart.js": "be29355a59c562a0be447f688fe8824a",
-"manifest.json": "90c454c29b48f08bc06627d125f70466",
-"version.json": "980547175e325fe622a3362b84d55b6a",
-"flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
-"app.js": "56fcf4b5865bf6ff6f97872c0e971025",
-"logo.png": "639b56a22e988dce81d486a3ad21ff71",
-"assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
-"assets/NOTICES": "6399915ecc4300178738a0e43143117d",
-"assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/assets/projects/random-pick.png": "8b0e9610d4d74f3b8046df9cce0743c4",
-"assets/assets/projects/arrow-pad.png": "a25a593ca74015d573f328f1a5f28a60",
-"assets/assets/projects/website.png": "847358c9205673dfab798a29f1639a6a",
-"assets/assets/projects/timer-game.png": "1ee3aa017cf2d14d8de761c792ba13fc",
-"assets/assets/projects/quiz.jpg": "18c0dc637732a3071b91048f01ad2661",
-"assets/assets/projects/digital-lcd-number.png": "b4729a9530f5fc290f29c229efa31efa",
-"assets/assets/projects/sai-voice.png": "0a12ed7f7de2047ddacb8ca5a0f23baa",
-"assets/assets/projects/carousel-portfolio.png": "345dc1978337fd4bc6da9dd01af37da6",
-"assets/assets/projects/sai-chits.png": "9080a8e4ea72d5a7cb92fae17d73e4fa",
-"assets/assets/projects/harry-potter.jpg": "edd79c24c8ec72290c0af10a063f1a2e",
-"assets/assets/projects/codeforces-app.jpeg": "d2c69fd0096122a7b66966d369b8b24e",
-"assets/assets/projects/distributed-group-chat.png": "fe9003dc60baa700e40e037d507f6e34",
+  "canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
+"main.dart.js": "cc5d8362f82936090e96cf7689edcaa8",
+"assets/AssetManifest.json": "493175e799ee1bd63575a3a8b7e5820e",
 "assets/assets/rajendra.jpeg": "718a4f992a1ea0738b7372ae21eebae6",
-"assets/assets/rnn.png": "245382b1f52a8142cfbc1801f317392b",
 "assets/assets/logo.png": "639b56a22e988dce81d486a3ad21ff71",
-"assets/assets/rive/s-logo-rotation.riv": "53b3fb36172e74d44f2524bf9d02f876",
+"assets/assets/projects/timer-game.png": "1ee3aa017cf2d14d8de761c792ba13fc",
+"assets/assets/projects/random-pick.png": "8b0e9610d4d74f3b8046df9cce0743c4",
+"assets/assets/projects/digital-lcd-number.png": "b4729a9530f5fc290f29c229efa31efa",
+"assets/assets/projects/codeforces-app.jpeg": "d2c69fd0096122a7b66966d369b8b24e",
+"assets/assets/projects/harry-potter.jpg": "edd79c24c8ec72290c0af10a063f1a2e",
+"assets/assets/projects/sai-chits.png": "9080a8e4ea72d5a7cb92fae17d73e4fa",
+"assets/assets/projects/website.png": "847358c9205673dfab798a29f1639a6a",
+"assets/assets/projects/arrow-pad.png": "a25a593ca74015d573f328f1a5f28a60",
+"assets/assets/projects/quiz.jpg": "18c0dc637732a3071b91048f01ad2661",
+"assets/assets/projects/sai-voice.png": "0a12ed7f7de2047ddacb8ca5a0f23baa",
+"assets/assets/projects/distributed-group-chat.png": "fe9003dc60baa700e40e037d507f6e34",
+"assets/assets/projects/carousel-portfolio.png": "345dc1978337fd4bc6da9dd01af37da6",
+"assets/assets/rnn.png": "245382b1f52a8142cfbc1801f317392b",
+"assets/assets/rive/water-home.riv": "e7aeb9484553b5c1aa439cc98aea903a",
 "assets/assets/rive/neon-bike.riv": "9caccf190ca474a71f5c3ed03e12f323",
 "assets/assets/rive/whale-loading.riv": "a7fabc78e33aa5bcb543f139d7648309",
-"assets/assets/rive/water-home.riv": "e7aeb9484553b5c1aa439cc98aea903a",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "613e4cc1af0eb5148b8ce409ad35446d",
+"assets/assets/rive/s-logo-rotation.riv": "53b3fb36172e74d44f2524bf9d02f876",
+"assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
+"assets/shaders/ink_sparkle.frag": "941bb03e508e6832dc7e1bd98b54ab44",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dd3c4233029270506ecc994d67785a37",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "613e4cc1af0eb5148b8ce409ad35446d",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "d1722d5cf2c7855862f68edb85e31f88",
-"assets/AssetManifest.json": "493175e799ee1bd63575a3a8b7e5820e"
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
+"assets/NOTICES": "352ca23d89f2d568242941d2cd9eabf9",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
+"logo.png": "639b56a22e988dce81d486a3ad21ff71",
+"index.html": "22a850f1650b061d21922733378e3ffd",
+"/": "22a850f1650b061d21922733378e3ffd",
+"resume.pdf": "cf64504b002b8c775d40c3943543977c",
+"version.json": "980547175e325fe622a3362b84d55b6a",
+"app.js": "56fcf4b5865bf6ff6f97872c0e971025",
+"manifest.json": "90c454c29b48f08bc06627d125f70466"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -50,7 +51,6 @@ const RESOURCES = {
 const CORE = [
   "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -149,9 +149,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })

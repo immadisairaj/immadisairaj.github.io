@@ -38,11 +38,11 @@ const RESOURCES = {
 "assets/NOTICES": "352ca23d89f2d568242941d2cd9eabf9",
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "logo.png": "639b56a22e988dce81d486a3ad21ff71",
-"index.html": "a965596c07209934d8438855731a8752",
-"/": "a965596c07209934d8438855731a8752",
+"index.html": "06ccfaf7d517d03167c65fd18e56143f",
+"/": "06ccfaf7d517d03167c65fd18e56143f",
 "resume.pdf": "cf64504b002b8c775d40c3943543977c",
 "version.json": "980547175e325fe622a3362b84d55b6a",
-"app.js": "56fcf4b5865bf6ff6f97872c0e971025",
+"app.js": "7fd588a9d7feef5e6f4a5d54431f6904",
 "manifest.json": "90c454c29b48f08bc06627d125f70466"
 };
 

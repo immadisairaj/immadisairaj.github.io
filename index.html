@@ -72,7 +72,7 @@
 
 <script>
   // The value below is injected by flutter build, do not touch.
-  var serviceWorkerVersion = '381146839';
+  var serviceWorkerVersion = "1577669477";
 </script>
 
 <div id="loading">
@@ -135,20 +135,23 @@
     _flutter.loader.loadEntrypoint({
       serviceWorker: {
         serviceWorkerVersion: serviceWorkerVersion,
+      },
+      onEntrypointLoaded: function(engineInitializer) {
+        loading.classList.add('main_done');
+        engineInitializer.initializeEngine().then(function(appRunner) {
+          loading.classList.add('init_done');
+
+          // run the app
+          appRunner.runApp();
+
+          // Wait a few milliseconds so users can see the "zoooom" animation
+          // before getting rid of the "loading" div.
+          window.setTimeout(function() {
+            loading.remove();
+          }, 200);
+        });
       }
-    }).then(function(engineInitializer) {
-      loading.classList.add('main_done');
-      return engineInitializer.initializeEngine();
-    }).then(function(appRunner) {
-      loading.classList.add('init_done');
-      return appRunner.runApp();
-    }).then(function(app) {
-        // Wait a few milliseconds so users can see the "zoooom" animation
-        // before getting rid of the "loading" div.
-        window.setTimeout(function() {
-          loading.remove();
-        }, 200);
-      });
+    });
   });
 </script>
 </body>

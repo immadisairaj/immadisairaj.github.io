@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"index.html": "59671a81e336fa80f8200ba86c90147b",
-"/": "59671a81e336fa80f8200ba86c90147b",
+const RESOURCES = {"index.html": "f7c17a1eda7725b05334b1a2afbdb19f",
+"/": "f7c17a1eda7725b05334b1a2afbdb19f",
 "canvaskit/canvaskit.js": "c86fbd9e7b17accae76e5ad116583dc4",
 "canvaskit/skwasm.js": "445e9e400085faead4493be2224d95aa",
 "canvaskit/skwasm.wasm": "e42815763c5d05bba43f9d0337fa7d84",
@@ -51,15 +51,11 @@ const RESOURCES = {"index.html": "59671a81e336fa80f8200ba86c90147b",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "edb06e69f55272d1bffb61d3dfbc0868",
 "assets/AssetManifest.json": "34368b9f8c7a91fffdc8db93abf09796",
 "version.json": "980547175e325fe622a3362b84d55b6a",
-"radiosai/images/teluguStream.png": "ed2cc4487e9eaed7f55d4bd9fb6599a8",
-"radiosai/images/prasanthiStream.png": "2298a77a7f428fcbddccae26371de85f",
-"radiosai/images/bhajanStream.png": "363b7f043f6b9b52d423bd889cdf2ac2",
-"radiosai/images/discourseStream.png": "fcaaa1cab2e98103d2fcdfcc2993d475",
 "logo.png": "639b56a22e988dce81d486a3ad21ff71",
 "manifest.json": "90c454c29b48f08bc06627d125f70466",
 "app.js": "7fd588a9d7feef5e6f4a5d54431f6904",
 "flutter.js": "c71a09214cb6f5f8996a531350400a9a",
-"main.dart.js": "94545e6aa5a880f7c7b97def924a0d31"};
+"main.dart.js": "dd7a0dafd82b7737c3e54e7402dde856"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
